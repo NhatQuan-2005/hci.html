@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Available Materials</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Available Materials</h1>
+        <div class="materials-grid">
+            <div class="material-card">
+                <i class="fas fa-book icon"></i>
+                <p>All about Django Python</p>
+                <button onclick="navigateToLesson('django')">View Materials</button>
+            </div>
+            <div class="material-card">
+                <i class="fas fa-book icon"></i>
+                <p>FEE</p>
+                <button onclick="navigateToLesson('fee')">View Materials</button>
+            </div>
+            <div class="material-card">
+                <i class="fas fa-book icon"></i>
+                <p>Hibernate</p>
+                <button onclick="navigateToLesson('hibernate')">View Materials</button>
+            </div>
+            <div class="material-card">
+                <i class="fas fa-book icon"></i>
+                <p>Java Mock Project</p>
+                <button onclick="navigateToLesson('mock')">View Materials</button>
+            </div>
+            <div class="material-card">
+                <i class="fas fa-book icon"></i>
+                <p>Java Programming Language</p>
+                <button onclick="navigateToLesson('java')">View Materials</button>
+            </div>
+            <div class="material-card">
+                <i class="fas fa-book icon"></i>
+                <p>Java Spring Framework</p>
+                <button onclick="navigateToLesson('spring')">View Materials</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function navigateToLesson(lesson) {
+            window.location.href = `lesson.html?lesson=${lesson}`;
+        }
+    </script>
+</body>
+</html>
