@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Results</title>
+  <style>
+    body {
+      font-family: 'Roboto', Arial, sans-serif;
+      background-color: #eaf2f8;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    .header {
+      background-color: #007bff;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .layout {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .sidebar {
+      background-color: #f8f9fa;
+      padding: 20px;
+      width: 250px;
+      min-height: 100vh;
+      border-right: 2px solid #dee2e6;
+    }
+
+    .sidebar-item {
+      margin: 15px 0;
+    }
+
+    .sidebar-item a {
+      text-decoration: none;
+      color: #007bff;
+      font-size: 18px;
+    }
+
+    .sidebar-item a:hover {
+      text-decoration: underline;
+    }
+
+    .main-content {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .result-item {
+      margin-bottom: 20px;
+      padding: 15px;
+      border: 1px solid #dee2e6;
+      border-radius: 8px;
+      background-color: #ffffff;
+      transition: box-shadow 0.3s;
+    }
+
+    .result-item:hover {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .result-item a {
+      text-decoration: none;
+      color: #0056b3;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .result-item a:hover {
+      text-decoration: underline;
+    }
+
+    .description {
+      color: #666;
+      font-size: 16px;
+      margin-top: 5px;
+    }
+
+    @media (max-width: 768px) {
+      .layout {
+        flex-direction: column;
+      }
+
+      .sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 2px solid #dee2e6;
+      }
+
+      .main-content {
+        padding-top: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    My Personal Website Results
+  </div>
+  <div class="layout">
+    <div class="sidebar">
+      <div class="sidebar-item">
+        <a href="https://nhatquan-2005.github.io/hci2025group12/index.html">Homepage</a>
+      </div>
+      <div class="sidebar-item">
+        <a href="https://nhatquan-2005.github.io/hci2025group12/project.html">Projects</a>
+      </div>
+      <div class="sidebar-item">
+        <a href="https://nhatquan-2005.github.io/hci2025group12/about.html">About Me</a>
+      </div>
+      <div class="sidebar-item">
+        <a href="https://nhatquan-2005.github.io/hci2025group12/login.html">Login</a>
+      </div>
+      <div class="sidebar-item">
+        <a href="https://nhatquan-2005.github.io/hci2025group12/student-management.html">Student Management</a>
+      </div>
+      <div class="sidebar-item">
+        <a href="https://nhatquan-2005.github.io/hci2025group12/support.html">Support</a>
+      </div>
+      <div class="sidebar-item">
+        <a href="https://nhatquan-2005.github.io/hci2025group12/feedback.html">Feedback</a>
+      </div>
+    </div>
+    <div class="main-content">
+      <div class="result-item">
+        <a href="https://nhatquan-2005.github.io/hci2025group12/index.html">Homepage</a>
+        <p class="description">The main homepage with an introduction to the website and navigation links.</p>
+      </div>
+      <div class="result-item">
+        <a href="https://nhatquan-2005.github.io/hci2025group12/project.html">Projects</a>
+        <p class="description">A list of my completed and ongoing projects with detailed descriptions.</p>
+      </div>
+      <div class="result-item">
+        <a href="https://nhatquan-2005.github.io/hci2025group12/about.html">About Me</a>
+        <p class="description">A page describing my personal information and professional background.</p>
+      </div>
+      <div class="result-item">
+        <a href="https://nhatquan-2005.github.io/hci2025group12/login.html">Login</a>
+        <p class="description">The login page for accessing the system.</p>
+      </div>
+      <div class="result-item">
+        <a href="https://nhatquan-2005.github.io/hci2025group12/student-management.html">Student Management</a>
+        <p class="description">A page for managing student information and activities.</p>
+      </div>
+      <div class="result-item">
+        <a href="https://nhatquan-2005.github.io/hci2025group12/support.html">Support</a>
+        <p class="description">A support page for users needing assistance with the website.</p>
+      </div>
+      <div class="result-item">
+        <a href="https://nhatquan-2005.github.io/hci2025group12/feedback.html">Feedback</a>
+        <p class="description">A feedback page for collecting user opinions and suggestions.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
